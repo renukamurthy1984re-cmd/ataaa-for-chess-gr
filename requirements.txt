@@ -3,3 +3,4 @@ requests
 pandas
 google-auth
 gTTS
+google-genai
