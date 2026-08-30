@@ -7,3 +7,4 @@ google-genai
 Pillow
 numpy
 pypdf
+python-chess
