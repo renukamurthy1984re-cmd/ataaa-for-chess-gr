@@ -20,8 +20,6 @@ import ast
 import datetime
 from google.oauth2 import id_token
 from google.auth.transport import requests as google_requests
-import pandas as pd
-import sqlite3
 
 
 
@@ -665,7 +663,6 @@ if st.sidebar.button("Chessboard style to Normal", use_container_width=True):
 
 # --- INITIALIZE AUTHENTICATION & SESSION STATE ---
 
-
 USERS_FILE = "ataaa_users.json"
 
 def load_registered_users():
@@ -1051,7 +1048,6 @@ elif main_nav == "🚪 ATAAA for Chess Sign out page":
     else:
         st.info("⚠️ No accounts are currently signed in or registered on this device.")
     st.stop()
-
 
 # =========================================================================
 # TOP OPEN MATCH CONFIGURATION BAR (Engine Screen)
@@ -1918,7 +1914,7 @@ with col_nav2:
         st.rerun()        
     st.markdown("""
         <div style="margin-top: -60px; pointer-events: none; text-align: center;">
-            <p class="shimmer-btn-label">GR</p>
+            <p class="shimmer-btn-label">✈️ ATAAA AI - Hub For Learning</p>
         </div>
     """, unsafe_allow_html=True)
 
@@ -4284,6 +4280,13 @@ if st.session_state.get("show_ai_screen", False):
     if st.button("🔙 Back to engine screen", use_container_width=True, key="btn_back_to_engine"):
         st.session_state.show_ai_screen = False
         st.rerun()
+
+
+
+
+
+
+
 
 
 
