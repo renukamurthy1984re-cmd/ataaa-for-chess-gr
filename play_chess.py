@@ -746,7 +746,8 @@ try:
 except Exception:
     GOOGLE_CLIENT_ID = "DUMMY_ID"
     GOOGLE_CLIENT_SECRET = "DUMMY_SECRET"
-    REDIRECT_URI = "http://localhost:8501"
+    REDIRECT_URI = "https://ataaa-for-chess-gr.streamlit.app"
+
 
 def get_google_login_url():
     """Generates the official Google OAuth login redirect URL."""
